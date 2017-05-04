@@ -1,12 +1,12 @@
-package com.markmc.minetest.utils;
+package utils;
 
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.markmc.minetest.utils.Utils.getByteArray;
-import static com.markmc.minetest.utils.Utils.u16;
-import static com.markmc.minetest.utils.Utils.u8;
+import static utils.Utils.getByteArray;
+import static utils.Utils.u16;
+import static utils.Utils.u8;
 
 /**
  * Constants.

@@ -1,6 +1,4 @@
-package com.markmc.minetest;
-
-import com.markmc.minetest.bot.BotRunnable;
+import bot.BotRunnable;
 
 /**
  * MultipleBotRunner.
@@ -17,10 +15,6 @@ public class MultipleBotRunner {
         for (int i = 1; i <= 10; i++) {
             thread = new Thread(new BotRunnable(serverIp, "bot-" + i));
             thread.start();
-        }
-
-        // Just keep looping
-        while (true) {
         }
     }
 

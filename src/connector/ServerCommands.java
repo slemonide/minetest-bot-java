@@ -1,10 +1,11 @@
-package com.markmc.minetest.connector;
+package connector;
 
-import com.markmc.minetest.utils.Utils;
+import utils.Utils;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.markmc.minetest.utils.Utils.getByteArray;
+import static utils.Utils.getByteArray;
 
 /**
  * ServerCommands.

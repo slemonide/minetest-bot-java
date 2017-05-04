@@ -1,18 +1,18 @@
-package com.markmc.minetest.acceptor;
+package acceptor;
 
-import com.markmc.minetest.connector.ClientState;
-import com.markmc.minetest.bot.Bot;
-import com.markmc.minetest.connector.Connect;
-import com.markmc.minetest.utils.Utils;
+import connector.ClientState;
+import bot.Bot;
+import connector.Connect;
+import utils.Utils;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.markmc.minetest.utils.Constants.EIGHT_BYTES;
-import static com.markmc.minetest.utils.Constants.FOUR_BYTES;
-import static com.markmc.minetest.utils.Constants.ONE_BYTE;
-import static com.markmc.minetest.utils.Constants.TWO_BYTES;
+import static utils.Constants.EIGHT_BYTES;
+import static utils.Constants.FOUR_BYTES;
+import static utils.Constants.ONE_BYTE;
+import static utils.Constants.TWO_BYTES;
 
 /**
  * ServiceHandler.
@@ -140,7 +140,7 @@ public class BotServiceHandler {
         try {
           String chatMessage = new String(msg, "UTF-16");
           System.out.println(chatMessage);
-        } catch (UnsupportedEncodingException ex) {
+        } catch (UnsupportedEncodingException ignored) {
         }
 
       }

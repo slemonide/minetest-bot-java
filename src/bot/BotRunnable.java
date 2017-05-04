@@ -1,21 +1,21 @@
-package com.markmc.minetest.bot;
+package bot;
 
-import com.markmc.minetest.acceptor.BotServiceHandler;
-import com.markmc.minetest.connector.ClientState;
-import com.markmc.minetest.acceptor.CommandHandler;
-import com.markmc.minetest.connector.Connect;
-import com.markmc.minetest.utils.Utils;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_ACK;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_DISCO;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_PING;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_SET_PEER_ID;
-import static com.markmc.minetest.utils.Constants.FOUR_BYTES;
-import static com.markmc.minetest.utils.Constants.ONE_BYTE;
-import static com.markmc.minetest.utils.Constants.TWO_BYTES;
-import static com.markmc.minetest.utils.Constants.TYPE_CONTROL;
-import static com.markmc.minetest.utils.Constants.TYPE_ORIGINAL;
-import static com.markmc.minetest.utils.Constants.TYPE_RELIABLE;
-import static com.markmc.minetest.utils.Constants.TYPE_SPLIT;
+import acceptor.BotServiceHandler;
+import connector.ClientState;
+import acceptor.CommandHandler;
+import connector.Connect;
+import utils.Utils;
+import static utils.Constants.CONTROLTYPE_ACK;
+import static utils.Constants.CONTROLTYPE_DISCO;
+import static utils.Constants.CONTROLTYPE_PING;
+import static utils.Constants.CONTROLTYPE_SET_PEER_ID;
+import static utils.Constants.FOUR_BYTES;
+import static utils.Constants.ONE_BYTE;
+import static utils.Constants.TWO_BYTES;
+import static utils.Constants.TYPE_CONTROL;
+import static utils.Constants.TYPE_ORIGINAL;
+import static utils.Constants.TYPE_RELIABLE;
+import static utils.Constants.TYPE_SPLIT;
 import java.nio.ByteBuffer;
 
 /**

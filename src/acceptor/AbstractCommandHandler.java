@@ -1,4 +1,4 @@
-package com.markmc.minetest.acceptor;
+package acceptor;
 
 import java.nio.ByteBuffer;
 

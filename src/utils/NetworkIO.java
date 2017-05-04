@@ -1,4 +1,4 @@
-package com.markmc.minetest.utils;
+package utils;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

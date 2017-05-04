@@ -1,26 +1,26 @@
-package com.markmc.minetest.connector;
+package connector;
 
-import com.markmc.minetest.utils.Utils;
+import utils.Utils;
 import com.google.common.primitives.Bytes;
-import com.markmc.minetest.bot.Bot;
+import bot.Bot;
 
-import static com.markmc.minetest.utils.Constants.CLIENT_PROTOCOL_VERSION_MAX;
-import static com.markmc.minetest.utils.Constants.CLIENT_PROTOCOL_VERSION_MIN;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_ACK;
-import static com.markmc.minetest.utils.Constants.CONTROLTYPE_ENABLE_BIG_SEND_WINDOW;
-import static com.markmc.minetest.utils.Constants.MAX_PASSWORD_SIZE;
-import static com.markmc.minetest.utils.Constants.MAX_PLAYER_NAME_SIZE;
-import static com.markmc.minetest.utils.Constants.PEER_ID_INEXISTENT;
-import static com.markmc.minetest.utils.Constants.PROTOCOL_ID;
-import static com.markmc.minetest.utils.Constants.SEQNUM_MAX;
-import static com.markmc.minetest.utils.Constants.SER_FMT_VER_HIGHEST_READ;
-import static com.markmc.minetest.utils.Constants.TYPE_CONTROL;
-import static com.markmc.minetest.utils.Constants.TYPE_ORIGINAL;
-import static com.markmc.minetest.utils.Constants.TYPE_RELIABLE;
-import static com.markmc.minetest.utils.Constants.VERSION_MAJOR;
-import static com.markmc.minetest.utils.Constants.VERSION_MINOR;
-import static com.markmc.minetest.utils.Constants.VERSION_PATCH;
-import static com.markmc.minetest.utils.Constants.VERSION_STRING;
+import static utils.Constants.CLIENT_PROTOCOL_VERSION_MAX;
+import static utils.Constants.CLIENT_PROTOCOL_VERSION_MIN;
+import static utils.Constants.CONTROLTYPE_ACK;
+import static utils.Constants.CONTROLTYPE_ENABLE_BIG_SEND_WINDOW;
+import static utils.Constants.MAX_PASSWORD_SIZE;
+import static utils.Constants.MAX_PLAYER_NAME_SIZE;
+import static utils.Constants.PEER_ID_INEXISTENT;
+import static utils.Constants.PROTOCOL_ID;
+import static utils.Constants.SEQNUM_MAX;
+import static utils.Constants.SER_FMT_VER_HIGHEST_READ;
+import static utils.Constants.TYPE_CONTROL;
+import static utils.Constants.TYPE_ORIGINAL;
+import static utils.Constants.TYPE_RELIABLE;
+import static utils.Constants.VERSION_MAJOR;
+import static utils.Constants.VERSION_MINOR;
+import static utils.Constants.VERSION_PATCH;
+import static utils.Constants.VERSION_STRING;
 
 /**
  * Connect.

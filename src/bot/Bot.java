@@ -1,10 +1,10 @@
-package com.markmc.minetest.bot;
+package bot;
 
-import com.markmc.minetest.connector.ClientState;
-import com.markmc.minetest.utils.NetworkIO;
-import static com.markmc.minetest.utils.Constants.DEFAULT_SERVER_PORT;
-import static com.markmc.minetest.utils.Constants.PEER_ID_INEXISTENT;
-import static com.markmc.minetest.utils.Constants.SEQNUM_INITIAL;
+import connector.ClientState;
+import utils.NetworkIO;
+import static utils.Constants.DEFAULT_SERVER_PORT;
+import static utils.Constants.PEER_ID_INEXISTENT;
+import static utils.Constants.SEQNUM_INITIAL;
 
 /**
  * Bot.
