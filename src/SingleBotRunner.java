@@ -10,6 +10,7 @@ public class SingleBotRunner {
         String serverIp = "shame.ddns.net";
 
         BotRunnable botRunnable = new BotRunnable(serverIp, "bot-1");
-        botRunnable.run();
+        Thread botThread = new Thread(botRunnable);
+        botThread.start();
     }
 }

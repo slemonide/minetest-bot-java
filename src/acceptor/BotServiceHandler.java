@@ -3,6 +3,7 @@ package acceptor;
 import connector.ClientState;
 import bot.Bot;
 import connector.Connect;
+import controls.ChatManager;
 import utils.Utils;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
@@ -140,10 +141,11 @@ public class BotServiceHandler {
         try {
           String chatMessage = new String(msg, "UTF-16");
           System.out.println(chatMessage);
+            ChatManager.getInstance().getController().appendMessage(chatMessage);
         } catch (UnsupportedEncodingException ignored) {
         }
-
       }
+
     });
     CMD_HANDLER.put(Utils.getByteBuffer("0031"), new AbstractCommandHandler() {
       public String getName() {

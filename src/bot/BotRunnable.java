@@ -4,6 +4,8 @@ import acceptor.BotServiceHandler;
 import connector.ClientState;
 import acceptor.CommandHandler;
 import connector.Connect;
+import controls.ChatManager;
+import controls.ChatWindow;
 import utils.Utils;
 import static utils.Constants.CONTROLTYPE_ACK;
 import static utils.Constants.CONTROLTYPE_DISCO;
@@ -23,7 +25,6 @@ import java.nio.ByteBuffer;
  * @author markmc
  */
 public class BotRunnable implements Runnable {
-
     private final Bot bot;
     private final Connect connect;
     private final BotServiceHandler serviceHandler;
@@ -35,6 +36,7 @@ public class BotRunnable implements Runnable {
     }
 
     public void run() {
+
         try {
             ByteBuffer data;
 
@@ -53,9 +55,7 @@ public class BotRunnable implements Runnable {
 
             connect.connect();
 
-            boolean pollServer = Boolean.TRUE;
-
-            while (pollServer) {
+            while (!Thread.interrupted()) {
                 // Accept connections from server
                 System.out.println("State: " + bot.getState());
                 if (bot.getState() == ClientState.Created) {
@@ -125,8 +125,8 @@ public class BotRunnable implements Runnable {
                     }
                 }
             }
-        } catch (Exception ex) {
-            System.out.println(ex);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }
